@@ -1,5 +1,13 @@
 # testing-repo
 
+atmbranch-app
+├─ sst.config.ts
+├─ package.json
+├─ packages
+│  ├─ functions
+│  └─ core
+└─ stacks
+
 
 atmbranch-app
 ├─ sst.config.ts
@@ -14,5 +22,32 @@ atmbranch-app
 │      ├─ utils
 │    ├─ test
 │  └─ core
-│    ├─ endpointHandlers
+│    ├─ externalApis
+│    ├─ awsApis
+│    ├─ services
+│    ├─ mappers
+│    ├─ utils
+│    └─ dynamo
 └─ stacks
+
+packages
+├─ functions
+│  ├─ src
+│    ├─ endpointHandlers
+│    ├─ jobHandlers
+│    ├─ queueHandlers
+│    ├─ otherHandlers
+│    ├─ utils
+│  ├─ test
+├─ core
+│  ├─ src
+│    ├─ externalApis
+│    ├─ awsApis
+│    ├─ services
+│    ├─ mappers
+│    ├─ utils
+│    └─ dynamo
+stacks
+  ├─ utils
+  ├─ ServiceBaseStack
+  └─ ServiceStack
